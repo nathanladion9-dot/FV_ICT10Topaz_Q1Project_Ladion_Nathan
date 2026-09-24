@@ -88,13 +88,6 @@
        }
 
 
-       .product-grid {
-           display: grid;
-           grid-template-columns: repeat(3, 1fr);
-           gap: 20px 10px;
-       }
-
-
        .product {
            text-align: left;
        }
@@ -256,37 +249,6 @@
            color: #777;
            margin-top: 5px;
        }
-
-
-       @media (max-width: 700px) {
-           .shop {
-               width: 94%;
-               margin: 30px auto;
-               padding: 20px;
-           }
-
-
-           .product-grid {
-               grid-template-columns: repeat(2, 1fr);
-           }
-
-
-           .product-image {
-               height: 180px;
-           }
-       }
-
-
-       @media (max-width: 450px) {
-           .product-grid {
-               grid-template-columns: 1fr;
-           }
-
-
-           .product-image {
-               height: 220px;
-           }
-       }
    </style>
 </head>
 
@@ -308,110 +270,124 @@
 
 
        <form>
-           <div class="product-grid">
-               <div class="product">
-                   <div class="product-image yellow">
-                       <img class="product-placeholder"
-                            src="https://i.pinimg.com/736x/b2/a9/f6/b2a9f654bb07b9e833a135770db56635.jpg"
-                            alt="Spanish Latte">
-                   </div>
+           <div class="row g-3">
 
 
-                   <div class="product-info">
-                       <p class="product-name">Spanish Latte</p>
-                       <p class="product-price">₱150.00</p>
+               <div class="col-12 col-sm-6 col-md-4">
+                   <div class="product">
+                       <div class="product-image yellow">
+                           <img class="product-placeholder"
+                                src="https://i.pinimg.com/736x/b2/a9/f6/b2a9f654bb07b9e833a135770db56635.jpg"
+                                alt="Spanish Latte">
+                       </div>
 
 
-                       <div class="product-select">
-                           <input type="checkbox" id="item1" value="150">
-                           <label for="item1">Add to order</label>
+                       <div class="product-info">
+                           <p class="product-name">Spanish Latte</p>
+                           <p class="product-price">₱150.00</p>
+
+
+                           <div class="product-select">
+                               <input type="checkbox" id="item1" value="150">
+                               <label for="item1">Add to order</label>
+                           </div>
                        </div>
                    </div>
                </div>
 
 
-               <div class="product">
-                   <div class="product-image blue">
-                       <img class="product-placeholder"
-                            src="https://i.pinimg.com/736x/b9/25/71/b92571b2fbfe8fda86e58cf5cfc50e1d.jpg"
-                            alt="Black Coffee">
-                   </div>
+               <div class="col-12 col-sm-6 col-md-4">
+                   <div class="product">
+                       <div class="product-image blue">
+                           <img class="product-placeholder"
+                                src="https://i.pinimg.com/736x/b9/25/71/b92571b2fbfe8fda86e58cf5cfc50e1d.jpg"
+                                alt="Black Coffee">
+                       </div>
 
 
-                   <div class="product-info">
-                       <p class="product-name">Black Coffee</p>
-                       <p class="product-price">₱80.00</p>
+                       <div class="product-info">
+                           <p class="product-name">Black Coffee</p>
+                           <p class="product-price">₱80.00</p>
 
 
-                       <div class="product-select">
-                           <input type="checkbox" id="item2" value="80">
-                           <label for="item2">Add to order</label>
+                           <div class="product-select">
+                               <input type="checkbox" id="item2" value="80">
+                               <label for="item2">Add to order</label>
+                           </div>
                        </div>
                    </div>
                </div>
 
 
-               <div class="product">
-                   <div class="product-image green">
-                       <img class="product-placeholder"
-                            src="https://i.pinimg.com/736x/d1/97/3e/d1973eff377fb3477c8be70b5151f87b.jpg"
-                            alt="Espresso">
-                   </div>
+               <div class="col-12 col-sm-6 col-md-4">
+                   <div class="product">
+                       <div class="product-image green">
+                           <img class="product-placeholder"
+                                src="https://i.pinimg.com/736x/d1/97/3e/d1973eff377fb3477c8be70b5151f87b.jpg"
+                                alt="Espresso">
+                       </div>
 
 
-                   <div class="product-info">
-                       <p class="product-name">Espresso</p>
-                       <p class="product-price">₱100.00</p>
+                       <div class="product-info">
+                           <p class="product-name">Espresso</p>
+                           <p class="product-price">₱100.00</p>
 
 
-                       <div class="product-select">
-                           <input type="checkbox" id="item3" value="100">
-                           <label for="item3">Add to order</label>
+                           <div class="product-select">
+                               <input type="checkbox" id="item3" value="100">
+                               <label for="item3">Add to order</label>
+                           </div>
                        </div>
                    </div>
                </div>
 
 
-               <div class="product">
-                   <div class="product-image pink">
-                       <img class="product-placeholder"
-                            src="https://i.pinimg.com/1200x/c0/46/2a/c0462aba87c717ea044e5dccacf0f80d.jpg"
-                            alt="Cappuccino">
-                   </div>
+               <div class="col-12 col-sm-6 col-md-4">
+                   <div class="product">
+                       <div class="product-image pink">
+                           <img class="product-placeholder"
+                                src="https://i.pinimg.com/1200x/c0/46/2a/c0462aba87c717ea044e5dccacf0f80d.jpg"
+                                alt="Cappuccino">
+                       </div>
 
 
-                   <div class="product-info">
-                       <p class="product-name">Cappuccino</p>
-                       <p class="product-price">₱120.00</p>
+                       <div class="product-info">
+                           <p class="product-name">Cappuccino</p>
+                           <p class="product-price">₱120.00</p>
 
 
-                       <div class="product-select">
-                           <input type="checkbox" id="item4" value="120">
-                           <label for="item4">Add to order</label>
+                           <div class="product-select">
+                               <input type="checkbox" id="item4" value="120">
+                               <label for="item4">Add to order</label>
+                           </div>
                        </div>
                    </div>
                </div>
 
 
-               <div class="product">
-                   <div class="product-image orange">
-                       <img class="product-placeholder"
-                            src="https://i.pinimg.com/736x/d6/71/8c/d6718c2006d95c1f1deef343fdd766ec.jpg"
-                            alt="Matcha">
-                   </div>
+               <div class="col-12 col-sm-6 col-md-4">
+                   <div class="product">
+                       <div class="product-image orange">
+                           <img class="product-placeholder"
+                                src="https://i.pinimg.com/736x/d6/71/8c/d6718c2006d95c1f1deef343fdd766ec.jpg"
+                                alt="Matcha">
+                       </div>
 
 
-                   <div class="product-info">
-                       <p class="product-name">Matcha</p>
-                       <p class="product-price">₱200.00</p>
+                       <div class="product-info">
+                           <p class="product-name">Matcha</p>
+                           <p class="product-price">₱200.00</p>
 
 
-                       <div class="product-select">
-                           <input type="checkbox" id="item5" value="200">
-                           <label for="item5">Add to order</label>
+                           <div class="product-select">
+                               <input type="checkbox" id="item5" value="200">
+                               <label for="item5">Add to order</label>
+                           </div>
                        </div>
                    </div>
                </div>
+
+
            </div>
 
 
@@ -455,6 +431,4 @@
    <script type="py" src="main.py"></script>
 </body>
 </html>
-
-
 
